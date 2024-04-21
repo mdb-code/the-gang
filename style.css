@@ -169,15 +169,25 @@ nav ul li a{
 }
 
 .more-info h2{
-    line-height: 50px;
+    line-height: 68px;
     padding-top: 50px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 p{
     font-weight: bold;
     font-size: 30px;
-    margin: 44px 160px 23px;
+    margin: 23px auto 44px;
+}
+
+.highlight{
+    font-weight: 800;
+    background-color: #FFADF9;
+    color: #FF3300;
+    padding: 5px;
+    display: inline;
+    line-height: 50px;
 }
 
 .more-info h2.cta{
