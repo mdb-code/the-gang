@@ -17,6 +17,7 @@ h2{
 
 h3{
     font-weight: bold;
+    font-size: 30px;
     color: white;
 }
 
@@ -101,6 +102,13 @@ button.cta{
     border-radius: 10px;
     text-decoration: none;
     border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a.cta:active,
+button.cta:active{
+    opacity: .7;
 }
 
 a.cta.alt,
@@ -194,14 +202,121 @@ p{
     margin: 44px 0 60px;
 }
 
+.sep{
+    width: 470px;
+    height: 10px;
+    margin: 0 auto 70px;
+    background: black;
+}
+
+.nb-list{
+    width: 470px;
+    height: 644px;
+    background-color: #EDEDED;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 30px;
+    margin-top: 0;
+    position: relative;
+}
+
+.nb-list li{
+    width: 430px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    display: block;
+    box-sizing: border-box;
+    padding: 6px 20px;
+}
+
+.nb-list li.blue{background-color: #007FFF;}
+.nb-list li.gray{background-color: rgba(0, 0, 0, .1);}
+.nb-list li.red{background-color: #FF3300;}
+.nb-list li.pink{background-color: #FFADF9;}
+.nb-list li.salmon{background-color: #FA8072;}
+.nb-list li.yellow{
+    background-color: #FFD400;
+    color: black;
+}
+
+.nb-list li.dragging{
+    position: absolute;
+    top: 60px;
+    left: 61px;
+    rotate: 6deg;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .3);
+}
+
+.nb-list li.dragging:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 54px;
+    height: 60px;    
+    background: url(img/hand.png) no-repeat 0 0;
+    background-size: 100%;
+    bottom: -30px;
+    left: 60%;
+}
+
+}
+.wrapper2{
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+.story h3{
+    color: black;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.gang-img{
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    margin: 84px auto 45px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .4);
+}
+
+footer a{
+    color: rgba(0, 0, 0, .4);
+}
+
+.popup{ 
+    display: none;
+}
 /*  
 
- <div class="more-info" id="more-info">
-        <div class="wrapper">
-            <h2>Join Our Fan Club</h2>
-            <p>Every week we have <span class="highlight">a party.</span> If you want to join us then join our fan club. Members will also receive pictures of us in all kinds of shapes and sizes. Cool huh?</p>
-            <button class="cta">Sign Me up</button>
-        </div> 
+    <div class="story" id="story">
+        <div class="wrapper2">
+            <ul class="nb-list">
+                <li class="blue">Rock 'n Roll</li>
+                <li class="gray">&nbsp;</li>
+                <li class="dragging">Laughter</li>
+                <li class="red">Square Offs</li>
+                <li class="pink">Circuitous Routes</li>
+                <li class="salmon">Trigonometry</li>
+                <li class="blue">Rad Hats</li>
+                <li class="yellow">Being Silly</li>
+            </ul>
+            <h3>Left: Things We Find Important<br>
+            Below: Our Story</h3>
+            <p>Once upon a time there was a group of shapes. They were mostly black and rectangular. They were mean and very serious.</p>
+            <p>And so they kicked the 3 shapes that didn’t conform out of their gang, which was called the Right Angled Gang.</p>
+            <p>And so these 3 shapes were very sad, but found great joy and comfort being around each other. They soon started having a lot of fun, started rocking and rolling, started being silly, and became the most well-known shape gang in the universe.</p>
+            <p>They even started making fun of squares and rectangles in what they like to call ‘Square Offs’!</p>
+        </div>
     </div>
-    
  */
